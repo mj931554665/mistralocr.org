@@ -4,6 +4,8 @@ Allow: /
 Allow: /es/
 Allow: /iframe/
 Allow: /ko/
+Allow: /ru/
+Allow: /zh-CN/
 
 # 站点地图
 Sitemap: https://mistralocr.org/sitemap.xml
