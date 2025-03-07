@@ -1,7 +1,9 @@
 # robots.txt for https://mistralocr.org
 User-agent: *
 Allow: /
+Allow: /es/
 Allow: /iframe/
+Allow: /ko/
 
 # 站点地图
 Sitemap: https://mistralocr.org/sitemap.xml
