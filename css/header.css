@@ -21,7 +21,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--spacing-4) 0;
+    padding: var(--spacing-4);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -52,7 +52,7 @@ nav {
     margin: 0;
 }
 
-/* 导航链接 */
+/* 导航控制区 */
 .nav-controls {
     display: flex;
     align-items: center;
@@ -61,39 +61,35 @@ nav {
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: var(--spacing-4);
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
 }
 
 .nav-links a {
     color: var(--text-secondary);
     text-decoration: none;
     font-size: var(--text-base);
-    transition: color var(--transition-fast);
-    position: relative;
+    padding: var(--spacing-2);
 }
 
 .nav-links a:hover {
     color: var(--primary-color);
 }
 
-.nav-links a span {
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-color);
-    transition: width var(--transition-normal);
-}
-
-.nav-links a:hover span {
-    width: 100%;
-}
-
 /* 语言下拉菜单 */
 .language-dropdown {
     position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .language-button {
@@ -103,15 +99,9 @@ nav {
     background: none;
     border: none;
     color: var(--text-secondary);
-    font-size: var(--text-base);
     cursor: pointer;
     padding: var(--spacing-2);
-    border-radius: var(--radius-md);
-    transition: background-color var(--transition-fast);
-}
-
-.language-button:hover {
-    background-color: var(--background-gray);
+    height: 100%;
 }
 
 .dropdown-menu {
@@ -123,7 +113,7 @@ nav {
     border-radius: var(--radius-lg);
     padding: var(--spacing-2);
     min-width: 200px;
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-md);
     display: none;
 }
 
@@ -136,8 +126,6 @@ nav {
     padding: var(--spacing-2) var(--spacing-4);
     color: var(--text-secondary);
     text-decoration: none;
-    border-radius: var(--radius-md);
-    transition: background-color var(--transition-fast);
 }
 
 .dropdown-item:hover {
@@ -226,14 +214,22 @@ nav {
 
 /* 移动端适配 */
 @media (max-width: 768px) {
-    .search-box,
     .nav-links {
         display: none;
     }
-
-    .burger,
-    .mobile-search-toggle {
+    
+    .burger {
         display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        padding: var(--spacing-2);
+    }
+    
+    .burger div {
+        width: 25px;
+        height: 2px;
+        background-color: var(--text-primary);
     }
 
     .mobile-nav.active {
