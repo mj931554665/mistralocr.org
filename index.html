@@ -23,6 +23,20 @@
     gtag('config', 'G-8DKTS3M5Q2');
   </script>
 
+  <!-- Plausible Analytics -->
+  <script>
+    var script = document.createElement('script');
+    script.defer = true;
+    script.dataset.domain = "mistralocr.org";
+    script.dataset.api = "https://plausible.io/api/event";
+    script.src = "https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js";
+    document.getElementsByTagName('head')[0].appendChild(script);
+  </script>
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="0b47b8ab-5314-4bea-8a53-56aa8506ce20"></script>
+
   <title>Mistral OCR | Free Online Text Recognition & Document Extraction Tool</title>
   <meta name="description" content="Experience state-of-the-art document extraction with Mistral OCR – free, fast, and multilingual for all your needs.">
   <link rel="canonical" href="https://mistralocr.org/">
@@ -347,19 +361,19 @@
   <footer style="background: #2c2c2c; color: white; padding: 20px; text-align: center;">
     <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: auto;">
       <div>
-        <h4>相关工具</h4>
-        <p><a href="https://translate.google.com/" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">Google 翻译</a></p>
-        <p><a href="https://www.deepl.com/translator" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">DeepL 翻译</a></p>
+        <h4>Related Tools</h4>
+        <p><a href="https://translate.google.com/" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">Google Translate</a></p>
+        <p><a href="https://www.deepl.com/translator" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">DeepL Translate</a></p>
       </div>
       <div>
-        <p>关于我们</p>
-        <p>mistralocr.org 是一个免费的在线OCR文字识别平台。</p>
+        <p>About Us</p>
+        <p>mistralocr.org is a free online OCR text recognition platform.</p>
       </div>
       <div>
-        <h4>法律信息</h4>
-        <p><a href="./privacy-policy/" style="color: white; text-decoration: none;">隐私政策</a></p>
-        <p><a href="./terms-of-service/" style="color: white; text-decoration: none;">服务条款</a></p>
-        <p><a href="./cookie-policy/" style="color: white; text-decoration: none;">Cookie 政策</a></p>
+        <h4>Legal Information</h4>
+        <p><a href="./privacy-policy/" style="color: white; text-decoration: none;">Privacy Policy</a></p>
+        <p><a href="./terms-of-service/" style="color: white; text-decoration: none;">Terms of Service</a></p>
+        <p><a href="./cookie-policy/" style="color: white; text-decoration: none;">Cookie Policy</a></p>
       </div>
     </div>
     <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #444;">
@@ -368,52 +382,6 @@
   </footer>
 
 
-  <!-- 用户反馈组件 -->
-  <div id="feedback-widget" style="position: fixed; bottom: 20px; right: 20px; background: #2c2c2c; padding: 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); z-index: 1000;">
-    <div style="color: white; margin-bottom: 10px;">Was this helpful?</div>
-    <div style="display: flex; gap: 10px;">
-      <button onclick="submitFeedback('yes')" style="background: #00ff9d; color: #1a1a1a; border: none; padding: 5px 15px; border-radius: 4px; cursor: pointer;">Yes</button>
-      <button onclick="submitFeedback('no')" style="background: #ff4d4d; color: white; border: none; padding: 5px 15px; border-radius: 4px; cursor: pointer;">No</button>
-    </div>
-    <div id="feedback-form" style="display: none; margin-top: 10px;">
-      <textarea id="feedback-text" placeholder="Your feedback..." style="width: 100%; padding: 8px; margin-bottom: 8px; border-radius: 4px; border: 1px solid #444;"></textarea>
-      <button onclick="submitDetailedFeedback()" style="background: #00b8ff; color: white; border: none; padding: 5px 15px; border-radius: 4px; cursor: pointer; width: 100%;">Submit</button>
-    </div>
-  </div>
-
-  <script>
-    function submitFeedback(type) {
-      // 记录基础反馈
-      window.va('event', {
-        name: 'feedback',
-        value: type
-      });
-      
-      if (type === 'no') {
-        document.getElementById('feedback-form').style.display = 'block';
-      } else {
-        document.getElementById('feedback-widget').innerHTML = '<div style="color: #00ff9d; text-align: center;">Thank you for your feedback!</div>';
-        setTimeout(() => {
-          document.getElementById('feedback-widget').style.display = 'none';
-        }, 3000);
-      }
-    }
-
-    function submitDetailedFeedback() {
-      const feedback = document.getElementById('feedback-text').value;
-      if (feedback.trim()) {
-        // 记录详细反馈
-        window.va('event', {
-          name: 'detailed_feedback',
-          value: feedback
-        });
-      }
-      document.getElementById('feedback-widget').innerHTML = '<div style="color: #00ff9d; text-align: center;">Thank you for your feedback!</div>';
-      setTimeout(() => {
-        document.getElementById('feedback-widget').style.display = 'none';
-      }, 3000);
-    }
-  </script>
 
 
   <script defer data-domain="mistralocr.org" src="https://click.pageview.click/js/script.js"></script>
