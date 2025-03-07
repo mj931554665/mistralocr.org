@@ -1,10 +1,14 @@
 # robots.txt for https://mistralocr.org
 User-agent: *
 Allow: /
+Allow: /cookie-policy/
 Allow: /es/
 Allow: /iframe/
 Allow: /ko/
+Allow: /privacy-policy/
+Allow: /pt/
 Allow: /ru/
+Allow: /terms-of-service/
 Allow: /zh-CN/
 
 # 站点地图

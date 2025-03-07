@@ -244,7 +244,6 @@ main {
     padding: 0 1rem;
   }
   .mobile-game {
-    display: none;
   }
 }
 
@@ -353,7 +352,6 @@ main {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2),
     0 2px 4px -1px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  display: none;
 }
 
 @media (min-width: 768px) {
@@ -660,7 +658,6 @@ article > section > h2 > span {
 }
 
 .game-container iframe {
-  display: none;
 }
 
 @media (min-width: 768px) {
