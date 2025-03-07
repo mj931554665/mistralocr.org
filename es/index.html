@@ -366,52 +366,6 @@
   </footer>
 
 
-  <!-- 用户反馈组件 -->
-  <div id="feedback-widget" style="position: fixed; bottom: 20px; right: 20px; background: #2c2c2c; padding: 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); z-index: 1000;">
-    <div style="color: white; margin-bottom: 10px;">Was this helpful?</div>
-    <div style="display: flex; gap: 10px;">
-      <button onclick="submitFeedback('yes')" style="background: #00ff9d; color: #1a1a1a; border: none; padding: 5px 15px; border-radius: 4px; cursor: pointer;">Yes</button>
-      <button onclick="submitFeedback('no')" style="background: #ff4d4d; color: white; border: none; padding: 5px 15px; border-radius: 4px; cursor: pointer;">No</button>
-    </div>
-    <div id="feedback-form" style="display: none; margin-top: 10px;">
-      <textarea id="feedback-text" placeholder="Your feedback..." style="width: 100%; padding: 8px; margin-bottom: 8px; border-radius: 4px; border: 1px solid #444;"></textarea>
-      <button onclick="submitDetailedFeedback()" style="background: #00b8ff; color: white; border: none; padding: 5px 15px; border-radius: 4px; cursor: pointer; width: 100%;">Submit</button>
-    </div>
-  </div>
-
-  <script>
-    function submitFeedback(type) {
-      // 记录基础反馈
-      window.va('event', {
-        name: 'feedback',
-        value: type
-      });
-      
-      if (type === 'no') {
-        document.getElementById('feedback-form').style.display = 'block';
-      } else {
-        document.getElementById('feedback-widget').innerHTML = '<div style="color: #00ff9d; text-align: center;">Thank you for your feedback!</div>';
-        setTimeout(() => {
-          document.getElementById('feedback-widget').style.display = 'none';
-        }, 3000);
-      }
-    }
-
-    function submitDetailedFeedback() {
-      const feedback = document.getElementById('feedback-text').value;
-      if (feedback.trim()) {
-        // 记录详细反馈
-        window.va('event', {
-          name: 'detailed_feedback',
-          value: feedback
-        });
-      }
-      document.getElementById('feedback-widget').innerHTML = '<div style="color: #00ff9d; text-align: center;">Thank you for your feedback!</div>';
-      setTimeout(() => {
-        document.getElementById('feedback-widget').style.display = 'none';
-      }, 3000);
-    }
-  </script>
 
 
   <script defer data-domain="mistralocr.org" src="https://click.pageview.click/js/script.js"></script>
