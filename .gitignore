@@ -1,0 +1,8 @@
+img/cover/.DS_Store
+.DS_Store
+.vscode/settings.json
+Base-Template/siteData.json
+package.json
+README.md
+node_modules/
+generate/
