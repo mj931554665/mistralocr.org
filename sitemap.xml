@@ -36,6 +36,13 @@
     </url>
 
     <url>
+        <loc>https://mistralocr.org/olmocr/</loc>
+        <lastmod>2025-03-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
         <loc>https://mistralocr.org/privacy-policy/</loc>
         <lastmod>2025-03-07</lastmod>
         <changefreq>daily</changefreq>

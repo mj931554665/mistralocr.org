@@ -5,6 +5,7 @@ Allow: /cookie-policy/
 Allow: /es/
 Allow: /iframe/
 Allow: /ko/
+Allow: /olmocr/
 Allow: /privacy-policy/
 Allow: /pt/
 Allow: /ru/
