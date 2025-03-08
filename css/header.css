@@ -2,8 +2,8 @@
 
 /* 头部导航样式 */
 header {
-    background-color: var(--background-light);
-    border-bottom: 1px solid var(--border-color);
+    background-color: #000000;
+    border-bottom: 1px solid #333333;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -48,7 +48,7 @@ nav {
 .logo h2 {
     font-size: var(--text-xl);
     font-weight: 600;
-    color: var(--text-primary);
+    color: #ffffff;
     margin: 0;
 }
 
@@ -74,14 +74,14 @@ nav {
 }
 
 .nav-links a {
-    color: var(--text-secondary);
+    color: #ffffff;
     text-decoration: none;
     font-size: var(--text-base);
     padding: var(--spacing-2);
 }
 
 .nav-links a:hover {
-    color: var(--primary-color);
+    color: #00ff9d;
 }
 
 /* 语言下拉菜单 */
@@ -98,7 +98,7 @@ nav {
     gap: var(--spacing-2);
     background: none;
     border: none;
-    color: var(--text-secondary);
+    color: #ffffff;
     cursor: pointer;
     padding: var(--spacing-2);
     height: 100%;
@@ -108,8 +108,8 @@ nav {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: var(--background-light);
-    border: 1px solid var(--border-color);
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
     border-radius: var(--radius-lg);
     padding: var(--spacing-2);
     min-width: 200px;
@@ -124,13 +124,13 @@ nav {
 .dropdown-item {
     display: block;
     padding: var(--spacing-2) var(--spacing-4);
-    color: var(--text-secondary);
+    color: #ffffff;
     text-decoration: none;
 }
 
 .dropdown-item:hover {
-    background-color: var(--background-gray);
-    color: var(--primary-color);
+    background-color: #2a2a2a;
+    color: #00ff9d;
 }
 
 /* 移动端汉堡菜单 */
@@ -145,16 +145,16 @@ nav {
 .burger div {
     width: 25px;
     height: 2px;
-    background-color: var(--text-primary);
+    background-color: #ffffff;
     transition: all var(--transition-normal);
 }
 
 /* 移动端导航菜单 */
 .mobile-nav {
     display: none;
-    background-color: var(--background-light);
+    background-color: #1a1a1a;
     padding: var(--spacing-4);
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid #333333;
 }
 
 .mobile-nav ul {
@@ -164,14 +164,15 @@ nav {
 .mobile-nav a {
     display: block;
     padding: var(--spacing-3);
-    color: var(--text-primary);
+    color: #ffffff;
     text-decoration: none;
     border-radius: var(--radius-md);
     transition: background-color var(--transition-fast);
 }
 
 .mobile-nav a:hover {
-    background-color: var(--background-gray);
+    background-color: #2a2a2a;
+    color: #00ff9d;
 }
 
 /* 搜索框样式 */
@@ -184,7 +185,7 @@ nav {
 .search-box form {
     display: flex;
     align-items: center;
-    background-color: var(--background-gray);
+    background-color: #1a1a1a;
     border-radius: var(--radius-lg);
     padding: var(--spacing-2);
 }
@@ -195,7 +196,7 @@ nav {
     background: none;
     padding: var(--spacing-2);
     font-size: var(--text-base);
-    color: var(--text-primary);
+    color: #ffffff;
     outline: none;
 }
 
@@ -204,12 +205,12 @@ nav {
     border: none;
     padding: var(--spacing-2);
     cursor: pointer;
-    color: var(--text-secondary);
+    color: #ffffff;
     transition: color var(--transition-fast);
 }
 
 .search-box button:hover {
-    color: var(--primary-color);
+    color: #00ff9d;
 }
 
 /* 移动端适配 */
