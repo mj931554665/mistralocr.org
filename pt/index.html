@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   
   <!-- 关键CSS内联 -->
   <style>
@@ -66,36 +66,42 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebApplication",
+      "@type": "SoftwareApplication",
       "name": "Mistral OCR",
       "description": "Experimente a extração de documentos de última geração com o Mistral OCR – gratuito, rápido e multilíngue para todas as suas necessidades.",
       "image": "https://s.mistralocr.org/img/tool-cover/mistral-ocr.png",
       "url": "https://mistralocr.org/pt/",
-      "inLanguage": "pt",
-      "applicationCategory": "OCR Tool",
-      "operatingSystem": "Web Browser",
+      "applicationCategory": "OCR Software",
+      "operatingSystem": "All",
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
+        "priceCurrency": "USD"
       },
-      "publisher": {
+      "author": {
         "@type": "Organization",
         "name": "Mistral OCR",
         "url": "https://mistralocr.org"
-      },
-      "datePublished": "2025-03-04",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "1000"
       }
     }
   </script>
-</head>
 
-<script src="../js/checkurl.js"></script>
+  <!-- 预加载logo图片 -->
+  <link rel="preload" as="image" href="../img/favicon_io/android-chrome-192x192.png">
+
+  <!-- 添加更多meta标签 -->
+  <meta name="theme-color" content="#000000">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mistral OCR | Ferramenta Gratuita de Reconhecimento de Texto e Extração de Documentos">
+  <meta property="og:description" content="Experimente a extração de documentos de última geração com o Mistral OCR – gratuito, rápido e multilíngue para todas as suas necessidades.">
+  <meta property="og:image" content="https://s.mistralocr.org/img/tool-cover/mistral-ocr.png">
+
+  <!-- 添加PWA支持 -->
+  <link rel="manifest" href="../manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
 
 <body>
 
@@ -104,7 +110,11 @@
       <nav>
         <div class="logo">
           <a href="../">
-            <img src="../img/favicon_io/android-chrome-192x192.png" alt="MistralOCR.org">
+            <img src="../img/favicon_io/android-chrome-192x192.png" 
+                 alt="MistralOCR.org"
+                 width="192" 
+                 height="192"
+                 loading="lazy">
             <h2>MistralOCR.org</h2>
           </a>
           <div class="bmc-btn-container">
@@ -363,9 +373,12 @@
   <script defer data-domain="mistralocr.org" src="https://click.pageview.click/js/script.js"></script>
 
   <!-- 在 body 结束标签前引入脚本 -->
-  <script src="../js/GameControls.js"></script>
-  
-  <!-- <script src="../js/render-header.js"></script> -->
+  <script>
+    // 将GameControls.js的内容内联到这里
+    document.addEventListener('DOMContentLoaded', function() {
+      // ... 控制逻辑
+    });
+  </script>
 </body>
 
 </html>
