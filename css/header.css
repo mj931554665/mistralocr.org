@@ -262,7 +262,7 @@ nav {
 
     /* 移动端 Buy Me a Coffee 按钮样式 */
     .logo .bmc-btn-container {
-        margin-left: 8px;
+        /* margin-left: 8px; */
         transform: scale(0.7);
         transform-origin: left center;
     }
