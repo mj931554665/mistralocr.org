@@ -90,7 +90,7 @@
         "name": "Mistral OCR",
         "url": "https://mistralocr.org"
       },
-      "datePublished": "2024-03-04",
+      "datePublished": "2025-03-04",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
@@ -118,7 +118,7 @@
             <img src="../img/favicon_io/android-chrome-192x192.png" alt="MistralOCR.org">
             <h2>MistralOCR.org</h2>
           </a>
-          <div style="margin-left: 20px;">
+          <div class="bmc-btn-container">
             <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="mojun" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
           </div>
         </div>
@@ -154,11 +154,11 @@
               </div>
             </li>
           </ul>
-          <div class="burger">
+          <!-- <div class="burger">
             <div></div>
             <div></div>
             <div></div>
-          </div>
+          </div> -->
         </div>
       </nav>
     </div>
@@ -298,26 +298,58 @@
   </main>
 
   <footer style="background: #2c2c2c; color: white; padding: 20px; text-align: center;">
-    <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: auto;">
-      <div>
-        <h4>Related Tools</h4>
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width: 1200px; margin: auto; gap: 2rem;">
+      <div class="footer-section">
+        <h4 style="color: #00ff9d; margin-bottom: 1rem;">Related Tools</h4>
         <p><a href="https://translate.google.com/" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">Google Translate</a></p>
         <p><a href="https://www.deepl.com/translator" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">DeepL Translate</a></p>
       </div>
-      <div>
-        <p>About Us</p>
+      
+      <div class="footer-section">
+        <h4 style="color: #00ff9d; margin-bottom: 1rem;">Mistral OCR Resources</h4>
+        <p><a href="https://mistral.ai/en/news/mistral-ocr" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">Mistral OCR Documentation</a></p>
+        <p><a href="https://console.mistral.ai/" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">Mistral API Console</a></p>
+        <p><a href="https://huggingface.co/spaces/Svngoku/mistral-ocr-demo" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">Mistral OCR Demo</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h4 style="color: #00ff9d; margin-bottom: 1rem;">OLM OCR Resources</h4>
+        <p><a href="https://olmocr.allenai.org/blog" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">OLM OCR Blog</a></p>
+        <p><a href="https://github.com/allenai/olmocr" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">GitHub Repository</a></p>
+        <p><a href="https://huggingface.co/collections/allenai/olmocr-67af8630b0062a25bf1b54a1" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">Hugging Face Models</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h4 style="color: #00ff9d; margin-bottom: 1rem;">About Us</h4>
         <p>mistralocr.org is a free online OCR text recognition platform.</p>
       </div>
-      <div>
-        <h4>Legal Information</h4>
+
+      <div class="footer-section">
+        <h4 style="color: #00ff9d; margin-bottom: 1rem;">Legal Information</h4>
         <p><a href="../privacy-policy/" style="color: white; text-decoration: none;">Privacy Policy</a></p>
         <p><a href="../terms-of-service/" style="color: white; text-decoration: none;">Terms of Service</a></p>
         <p><a href="../cookie-policy/" style="color: white; text-decoration: none;">Cookie Policy</a></p>
       </div>
     </div>
+    
     <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #444;">
-      <p>© 2024 mistralocr.org - All Rights Reserved</p>
+      <p>© 2025 mistralocr.org - All Rights Reserved</p>
     </div>
+
+    <style>
+      .footer-section {
+        flex: 1;
+        min-width: 200px;
+        margin-bottom: 1rem;
+      }
+      .footer-section p {
+        margin-bottom: 0.5rem;
+      }
+      .footer-section a:hover {
+        color: #00ff9d !important;
+        text-decoration: underline !important;
+      }
+    </style>
   </footer>
 
 

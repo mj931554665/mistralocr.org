@@ -30,6 +30,7 @@ nav {
 .logo {
     display: flex;
     align-items: center;
+    gap: var(--spacing-4);
 }
 
 .logo a {
@@ -50,6 +51,11 @@ nav {
     font-weight: 600;
     color: #ffffff;
     margin: 0;
+}
+
+/* Buy Me a Coffee 按钮容器 */
+.logo .bmc-btn-container {
+    margin-left: 20px;
 }
 
 /* 导航控制区 */
@@ -230,7 +236,7 @@ nav {
     .burger div {
         width: 25px;
         height: 2px;
-        background-color: var(--text-primary);
+        background-color: #ffffff;
     }
 
     .mobile-nav.active {
@@ -238,11 +244,27 @@ nav {
     }
 
     nav {
-        padding: var(--spacing-4);
+        padding: var(--spacing-2);
+    }
+
+    .logo {
+        gap: var(--spacing-2);
     }
 
     .logo h2 {
-        font-size: var(--text-lg);
+        font-size: 1rem;
+    }
+
+    .logo img {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* 移动端 Buy Me a Coffee 按钮样式 */
+    .logo .bmc-btn-container {
+        margin-left: 8px;
+        transform: scale(0.7);
+        transform-origin: left center;
     }
 }
 
