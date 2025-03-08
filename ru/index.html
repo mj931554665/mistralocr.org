@@ -4,34 +4,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DKTS3M5Q2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-8DKTS3M5Q2');
-  </script>
-
-  <!-- Plausible Analytics -->
-  <script>
-    var script = document.createElement('script');
-    script.defer = true;
-    script.dataset.domain = "mistralocr.org";
-    script.dataset.api = "https://plausible.io/api/event";
-    script.src = "https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js";
-    document.getElementsByTagName('head')[0].appendChild(script);
-  </script>
   
-  <!-- Vercel Analytics -->
+  <!-- 关键CSS内联 -->
+  <style>
+    body { margin: 0; background: #000; }
+    .container { max-width: 1200px; margin: 0 auto; }
+  </style>
+  
+  <!-- 预加载关键资源 -->
+  <link rel="preload" href="../css/main-style.css" as="style">
+  <link rel="preload" href="../css/header.css" as="style">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style">
+  
+  <!-- 延迟加载非关键JS -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-8DKTS3M5Q2"></script>
   <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    window.addEventListener('load', function() {
+      // GA4
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8DKTS3M5Q2');
+      
+      // Plausible
+      var script = document.createElement('script');
+      script.defer = true;
+      script.dataset.domain = "mistralocr.org";
+      script.src = "https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js";
+      document.head.appendChild(script);
+      
+      // Vercel
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+      var vercelScript = document.createElement('script');
+      vercelScript.defer = true;
+      vercelScript.src = "/_vercel/insights/script.js";
+      document.head.appendChild(vercelScript);
+    });
   </script>
-  <script defer src="/_vercel/insights/script.js"></script>
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <title>Mistral OCR | Бесплатный онлайн-инструмент для распознавания текста и извлечения документов</title>
   <meta name="description" content="Оцените передовые технологии извлечения документов с Mistral OCR – бесплатно, быстро и многоязычно для всех ваших нужд.">
@@ -44,12 +53,14 @@
   <link rel="icon" type="image/png" sizes="16x16" href="https://mistralocr.org/img/favicon_io/favicon-16x16.png" />
   <link rel="manifest" href="https://mistralocr.org/site.webmanifest" />
   
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1522458956946675"
-    crossorigin="anonymous"></script>
+  <!-- CSS加载 -->
   <link rel="stylesheet" href="../css/main-style.css">
-  <link rel="stylesheet" href="../css/header.css">  
-
-  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=67c574afa47a1e001adc626b&product=inline-share-buttons&source=platform" async="async"></script>
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <!-- 延迟加载广告和分享按钮 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1522458956946675" crossorigin="anonymous"></script>
+  <script defer src="https://platform-api.sharethis.com/js/sharethis.js#property=67c574afa47a1e001adc626b&product=inline-share-buttons"></script>
   
   <!-- 结构化数据 -->
   <script type="application/ld+json">
