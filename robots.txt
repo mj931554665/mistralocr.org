@@ -7,6 +7,7 @@ Allow: /iframe/
 Allow: /image-to-text/
 Allow: /ko/
 Allow: /olmocr/
+Allow: /pdf-to-text/
 Allow: /privacy-policy/
 Allow: /pt/
 Allow: /ru/
