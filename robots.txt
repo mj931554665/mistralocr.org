@@ -3,6 +3,7 @@ User-agent: *
 Allow: /
 Allow: /cookie-policy/
 Allow: /es/
+Allow: /extract-text-from-image/
 Allow: /iframe/
 Allow: /image-to-text/
 Allow: /image-to-text-converter/
