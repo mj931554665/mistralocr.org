@@ -4,6 +4,7 @@ Allow: /
 Allow: /cookie-policy/
 Allow: /es/
 Allow: /iframe/
+Allow: /image-to-text/
 Allow: /ko/
 Allow: /olmocr/
 Allow: /privacy-policy/
