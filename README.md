@@ -56,3 +56,22 @@
 ---
 
 GitHub: [https://github.com/mojun/mistralocr.org](https://github.com/mojun/mistralocr.org)
+
+
+thanks for
+[https://smbsgymvolontaire.sportsregions.fr/photos-du-club/les-grand-enfants-235556#end]
+[http://www3.comune.monopoli.ba.it/ServiziOnline/BachecaPiccoliAnnunci/tabid/120/fbType/View/FeedbackID/8297/language/en-US/Default.aspx]
+[https://www.paleorunningmomma.com/gingerbread-whoopie-pies-grain-free-paleo/]
+[https://warsztat.pl/artykuly/wsparcie-diagnostyczne,71587,bm9uZSE3MTU4NyEhbm93b2N6ZXNueXdhcnN6dGF0LnBsL2FydHlrdWx5L29zdGF0bmkvZWxla3RyeWthLzU]
+[https://lab.indienova.com/en/g/quatrain--en]
+[https://indianjadibooti.com/Jadistore/blog-headlines/blogart81]
+[http://www.tvworthwatching.com/post/Bestbets20200526shakespeare.aspx]
+[https://loveandmarriageblog.com/3-ingredient-frosted-strawberry-lemonade/#comment-632137]
+[https://dsmith.opened.ca/2022/10/07/blog-post-4-pln-and-inclusion/#comment-149966]
+[https://support.quizandsurveymaster.com/support/topic/flashcards-import/#post-12715]
+[https://bluesrockreview.com/2014/07/indigenous-feat-mato-nanji-time-is-coming-review.html]
+[https://damasklove.com/wp-comments-post.php]
+[https://www.arlindovsky.net/2023/12/calendario-do-advento-escolar-dia-30/#comment-614175]
+[]
+[]
+[]
