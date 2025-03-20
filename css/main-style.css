@@ -713,3 +713,20 @@ article section p {
   top: 0px;
   left: 100%;
 }
+
+.ad-container {
+  margin: 2rem 0;
+  text-align: center;
+  background: var(--background-gray);
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+/* 移动端响应式调整 */
+@media (max-width: 768px) {
+  .ad-container {
+    margin: 1.5rem -1rem;
+    border-radius: 0;
+  }
+}
