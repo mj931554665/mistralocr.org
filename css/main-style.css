@@ -718,29 +718,13 @@ article section p {
 .ad-container {
   width: 100%;
   min-height: 280px;
-  margin: 2rem auto;
+  margin: 2rem 0;
   padding: 1rem;
   background: #1a1a1a;
   border-radius: var(--radius-lg);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 255, 157, 0.1);
-  overflow: hidden;
-  position: relative;
-}
-
-/* 顶部广告 */
-.ad-top {
-  margin-bottom: 2rem;
-}
-
-/* 中间广告 */
-.ad-middle {
-  margin: 3rem auto;
-}
-
-/* 底部广告 */
-.ad-bottom {
-  margin-top: 3rem;
+  text-align: center;
 }
 
 /* 广告容器响应式调整 */
@@ -749,18 +733,6 @@ article section p {
     margin: 1.5rem -1rem;
     border-radius: 0;
     min-height: 250px;
-  }
-  
-  .ad-top {
-    margin-top: 0;
-  }
-  
-  .ad-middle {
-    margin: 2rem -1rem;
-  }
-  
-  .ad-bottom {
-    margin-bottom: 0;
   }
 }
 
